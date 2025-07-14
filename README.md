@@ -4,7 +4,7 @@
 
 `streamlit-table-labeling` is a Streamlit application for labeling data stored in a PostgreSQL database table.
 
-![alt text](images/image.png)
+![alt text](images/app.png)
 
 ## Installation
 
@@ -58,17 +58,18 @@ These labels will be presented in the Streamlit interface for selection during t
 Your PostgreSQL table should contain at least the following fields:
 
 - `id`: Primary key (integer)
-- `data`: The data to be labeled (text or varchar)
-- `label`: The label assigned (text or varchar, can be nullable)
+- `data`: The data to be labeled (JSONB)
+- `label`: The label assigned (JSONB)
 - `done`: Indicates whether the labeling task is completed (boolean, e.g., `TRUE`/`FALSE`)
 
+![alt text](images/db.png)
 Example table schema:
 
 ```sql
 CREATE TABLE labeling_table (
     id SERIAL PRIMARY KEY,
-    data TEXT NOT NULL,
-    label TEXT,
+    data JSONB,
+    label JSONB,
     done BOOL NOT NULL,
 );
 ```
