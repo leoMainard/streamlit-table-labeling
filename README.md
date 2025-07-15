@@ -11,7 +11,7 @@
 Clone the repository and install it in editable mode:
 
 ```bash
-git clone https://github.com/yourusername/streamlit-table-labeling.git
+git clone https://github.com/leoMainard/streamlit-table-labeling.git
 cd streamlit-table-labeling
 
 # Create virtual environment
