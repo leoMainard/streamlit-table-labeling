@@ -1,5 +1,5 @@
 [project]
-name = "streamlit-table-labeling"
+name = "streamlit_table_labeling"
 version = "0.1.0"
 description = "Streamlit app for table labeling"
 authors = [{ name = "Leo Mainard", email = "leomainard63@gmail.com" }]
